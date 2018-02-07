@@ -1,1 +1,1 @@
-# lnzdl.github.io
+# www.lnzdl.com
