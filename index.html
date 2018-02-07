@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+<meta http-equiv=X-UA-Compatible content=IE=EmulateIE8>
+<title>はなふぶき主站</title>
+<link rel="shortcut icon" href="home/myico.png"> 
+<link rel="apple-touch-icon" href="home/myico.png">
+<!-- CSS -->
+<script type="text/javascript">
+	//手机端跳转代码
+	var pc_style=""
+   	var browser={
+    versions:function(){ 
+           var u = navigator.userAgent, app = navigator.appVersion; 
+           return {//移动终端浏览器版本信息 
+                trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/)&&u.indexOf('QIHU')&&u.indexOf('Chrome')<0, //是否为移动终端  
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+				ua:u 
+            };
+         }(),
+         language:(navigator.browserLanguage || navigator.language).toLowerCase()
+	}	 
+ 	if(browser.versions.mobile||browser.versions.android||browser.versions.ios)
+		{document.write('<link type="text/css" href="home/css/css_m.css" rel="stylesheet" />');}//手机站
+	else
+		{document.write('<link type="text/css" href="home/css/css_pc.css" rel="stylesheet" />');}//PC站
+</script>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+ 	 var hm = document.createElement("script");
+ 	 hm.src = "https://hm.baidu.com/hm.js?fdb24b2e5956caa26c253bb48691c6d1";
+  	var s = document.getElementsByTagName("script")[0]; 
+  	s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<style type="text/css">
+		#searchtext{color:#888888;border:groove 2px #ccc;width:163px;height:24px;padding-left:21px; background:url("home/images/search_t.png") no-repeat scroll left center white;vertical-align:middle;background-size: 20px 20px;}
+		#search{border:solid 0px;width:30px;height:30px;margin:0 0 0 4px;padding-right:20px; background:url("home/images/search.png") no-repeat scroll center center transparent;vertical-align:middle;background-size: 30px 30px;}
+		$(document).ready(function(){$(input[type=text]:first).focus();});
+</style>
+</head>
+<body>
+<!-- 背景 -->
+<!-- MAIN -->
+	<div id="container">
+		<!-- 页眉 -->
+		<div id="header">
+			<span class="fl"><a href="http://www.lnzdl.com"><img src="home/images/mylogo.png" width="314" height="52" border="0"></a></span>
+			<span class="fr"><a href="http://www.lnzdl.com/book"><img src="home/images/collection.png" width="21" height="20" border="0"></a></span>
+		</div>
+		<!-- 窗口 -->
+		<div id="content" class="contentc">
+		    <ul>
+		    <li><a href="http://www.baidu.com/"><img src="home/images/logo_01.png" alt="Baidu" height="91" border="0" align="bottom"></a>
+	        <form action="http://www.baidu.com/baidu" target="_blank"/>
+		        <table bgcolor=""/>
+		        <input name=tn type=hidden value=baidu>
+		        <input type=text id="searchtext" name=word size=19>
+		        <input type="submit" id="search" value="">
+		        </table>
+		        </form></li>
+		    <li><a href="http://blog.lnzdl.com"><img src="home/images/logo_02.png" height="120" border="0" /></br>博客</a></li>
+		    <li><a href="http://dz.lnzdl.com"><img src="home/images/logo_03.png" height="120" border="0" /></br>论坛</a></li>
+		    <li><a href="http://i.lnzdl.com"><img src="home/images/logo_04.png" height="120" border="0" /></br>主站</a></li>
+		    <li><a href="http://zp.lnzdl.com"><img src="home/images/logo_05.png" height="120" border="0" /></br>简历</a></li>
+		    <li><a href="http://lj.lnzdl.com"><img src="home/images/logo_07.png" height="120" border="0" /></br>链接</a></li>
+		    <li><a href="http://lnzdl.com/ip.txt"><img src="home/images/logo_06.png" height="120" border="0" /></br>IP</a></li>
+		    <li><a href="http://me.lnzdl.com"><img src="home/images/logo_08.png" height="120" border="0" /></br>私有</a></li>
+		    <li><a href="https://account.www.net.cn/login/login.htm?oauth_callback=http%3A%2F%2Fwww.net.cn%2Fcore%2Faliyun%2Flogin_callback%3Freturnurl%3Dhttp%253A%252F%252Fwww.net.cn%252Fcore%252Fdomain%252Flist"><img src="home/images/logo_09.png" height="120" border="0" /></br>后台</a></li>
+		    </ul>
+		</div>
+		<!-- 页尾 -->
+		<div id="footer">
+	    	<div align="center" class="msg"><p> @版权所有：张大力 邮箱：i@lnzdl.com  <img src="home/images/ipc.png" width="19" height="22" /><a href="http://www.miitbeian.gov.cn" class="msg">辽ICP备15008533号</a></p></div>
+		</div>
+	</div>
+<!-- 光标定位 -->
+<script type="text/javascript">
+	document.getElementById("searchtext").focus();
+</script>
+</body>
+</html>
+<!-- 
+ ....       ....            ....                     ...........             ...........   n           ....        
+ :  :       :  :            :  :                     :.......  :             :.......  :  coɔ          :  :        
+ :  : ......:  :......   ...:  :.............              :  :                   :  :     u    .......:  :........
+ :  : :......  ......:   :...  .............:            :  :                   :  :            :.......  ........:
+ :  :       :  :            :  : .........              :  :                   :  :             .......:  :........
+ :  : ......:  :            :  : :.....  :          ... :  :  ...           ... :  :  ...       :......:  :.......:
+ :  : :  ....  :            :  : .....:  :..       : :  :  :   : :         : :  :  :   : :      .......:  :        
+ :  : :  :  :  :            :  : :  ...  ..:      : :   :  :    : :       : :   :  :    : :     :   ......:        
+ :  : :  :..:  :            :  : :  :.:  :       :.:    :  ：    :.:     :.:    :  ：    :.:    :   :..............
+ :..: :.........            :..: :.......:              :..:                    :..:            :.................:
+ -->
